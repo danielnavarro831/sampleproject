@@ -7,5 +7,38 @@
   <body>
     <h1>Some Text</h1>
     <p>this is some more text</p>
+    <script>
+      // Im a user object
+      var user = {
+        name: '',
+        age: null
+      };
+      // a function that logs hi to the console!
+      var i = 0;
+      var sayHelloInConsole = function() {
+        console.log('hi!');
+        i++;
+        console.log(i);
+      }
+
+      // prompt takes the user's input sets it equal the the user name as a string
+      user.name = prompt('Hello User, what is your name?');
+
+      // now the age!
+      var checkAndGetAge = function() {
+
+      }
+
+      console.log(user.name + "'s name is a " , typeof user.age);
+
+      // parseInt parses the user input from a string into a number, it is a javascript method
+      user.age = parseInt(user.age);
+
+      console.log(user.name + "'s name is now a " , typeof user.age)
+
+
+    </script>
+    <!-- Im a html script tag, you can write javascript here! -->
+    <button onclick="sayHelloInConsole()">Check Me Out</button>
   </body>
 </html>
